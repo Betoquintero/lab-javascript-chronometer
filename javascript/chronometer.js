@@ -16,13 +16,13 @@ class Chronometer {
   }
 
   getSeconds() {
-    let secondsAfterMinute = this.currentTime % 60
+    let secondsAfterMinutes = this.currentTime % 60
     return secondsAfterMinutes
   }
 
   computeTwoDigitNumber(value) {
     if (value < 10) {
-      return `0` + `${value}`
+      return `0${value}`
     } else{
       return (value.toString)
     }
